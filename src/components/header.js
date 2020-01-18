@@ -1,9 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Headroom from 'react-headroom'
 import './header.css'
 
 const Header = ({ siteTitle }) => (
+  <Headroom disableInlineStyles>
   <header className="site-header">
     <nav className="navbar navbar-primary">
       <div className="navbar-wrap">
@@ -20,6 +22,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </nav>
   </header>
+  </Headroom>
 )
 
 Header.propTypes = {
