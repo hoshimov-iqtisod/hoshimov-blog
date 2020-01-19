@@ -103,7 +103,7 @@ figure {
     }
 }
 @media (min-width: 1020px) {
-    .content-area {
+    .article.content-area {
         position: relative;
         width: 100%;
         padding-right: 20px;

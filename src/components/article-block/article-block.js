@@ -17,7 +17,7 @@ const ArticleBlock = () => (
         </section>
         <div className="cs-container">
             <div className="main-content">
-                <div className="content-area">
+                <div className="content-area article">
                     <main className="site-main">
                         <article className="entry">
                             <div className="post-media">
