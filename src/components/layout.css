@@ -5,7 +5,7 @@
   -webkit-transition: all .4s ease;
 }
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -206,7 +206,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -626,7 +626,7 @@ pre tt:after {
   box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 button, input[type=button], input[type=reset], input[type=submit], .button {
   display: inline-block;
