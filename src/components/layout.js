@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     <div className="site-inner">
       <Header siteTitle={data.site.siteMetadata.title} />
       {children}
-      <Footer />
+      <Footer siteTitle={data.site.siteMetadata.title} />
     </div>
   )
 }

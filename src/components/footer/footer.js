@@ -5,11 +5,11 @@ import telegram from '../../images/telegram-brands.svg';
 import fb from '../../images/facebook-brands.svg';
 import youtube from '../../images/youtube-brands.svg';
 
-const Footer = () => (
+const Footer = ({ siteTitle }) => (
     <footer className="site-footer">
         <div className="site-info">
             <div className="footer-content content-area">
-                <h5 className="site-title footer-title">Blog</h5>
+                <h5 className="site-title footer-title">{siteTitle}</h5>
                 <div className="pk-social-links-template-nav">
                 <div className="pk-social-links-items">
                     <div className="pk-social-links-item">

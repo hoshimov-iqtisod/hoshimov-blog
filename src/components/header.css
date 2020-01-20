@@ -75,6 +75,10 @@
     font-weight: 700;
     font-size: 28px;
 }
+.navbar-brand img {
+    width: 100px;
+    margin-bottom: 0;
+}
 .navbar-nav {
     border-left: 1px solid rgba(0,0,0,.05);
 }
