@@ -1,7 +1,7 @@
 ---
-path: /ana-holos
-date: 2020-01-21T13:19:54.567Z
 title: Ana holos
+date: 2020-01-21T13:19:54.567Z
+image: assets/photo_2020-01-22_03-02-02.jpg
 ---
 Men Komil Djalilovni umuman tanimayman, ammo ta’lim haqida 1-2 ta maqolasini o’qigan edim. Juda yaxshi, aniq faktlar va takliflar asosida yozadigan kolumnist. Maslahat beraman.
 
