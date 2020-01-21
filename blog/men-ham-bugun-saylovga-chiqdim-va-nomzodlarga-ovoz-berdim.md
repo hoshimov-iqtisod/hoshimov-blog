@@ -1,7 +1,7 @@
 ---
-path: /saylov
-date: 2020-01-21T13:24:27.547Z
 title: Men ham bugun saylovga chiqdim va nomzodlarga ovoz berdim
+date: 2020-01-21T13:24:27.547Z
+image: assets/photo_2020-01-22_03-02-08.jpg
 ---
 Tumanimizda, 96 yil tug’ilgan Diplomatiya universiteti bitiruvchisiga ovoz berdim. Shahar kengashida esa “Taraqqiyot Strategiyasi” markazi ijrochi direktoriga ovoz berdim. Men ovoz bergan nomzodlar yutib chiqadi degan umiddaman.
 
