@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import './blog-posts.css';
-import image from '../../images/blog-img.jpg';
 
 const BlogPosts = ({ data }) => {
     return (
@@ -11,7 +10,7 @@ const BlogPosts = ({ data }) => {
                     <div className="content-area">
                         <main className="site-main">
                             <header className="page-header">
-                                <h5 className="title-block">Свежие записи</h5>
+                                <h5 className="title-block">So'nggi xabarlar</h5>
                             </header>
                             <div className="post-archive">
                                 <div className="archive-wrap">
@@ -23,7 +22,7 @@ const BlogPosts = ({ data }) => {
                                                     <div className="post-inner entry-thumbnail">
                                                         <div className="cs-overlay cs-bg-dark cs-overlay-ratio cs-ratio-landscape">
                                                             <div className="cs-overlay-background">
-                                                                <img src={image} alt="article" />
+                                                                <img src={node.frontmatter.image} alt="article" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -32,7 +31,7 @@ const BlogPosts = ({ data }) => {
                                                             <header className="entry-header">
                                                                 <h2 className="entry-title">{node.frontmatter.title}</h2>
                                                             </header>
-                                                            <div className="entry-excerpt">Бизнес и дизайн – это отдельные планеты, и это нужно изменить. У нас существует проблема перевода</div>
+                                        <div className="entry-excerpt" dangerouslySetInnerHTML={{ __html: `${node.html.substring(0, 100)}...` }} />
                                                             <ul className="post-meta">
                                                                 {/* <li className="meta-date meta-author"></li> */}
                                                                 <li className="meta-date">{node.frontmatter.date}</li>

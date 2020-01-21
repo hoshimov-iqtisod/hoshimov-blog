@@ -20,7 +20,7 @@ const Header = () => (
               </Link>
               <ul className="navbar-nav ">
                 <li className="menu-item">
-                  <Link to="/">Статьи</Link>
+                  <Link to="/">Maqolalar</Link>
                 </li>
               </ul>
               <div className="nav-item dropdown">

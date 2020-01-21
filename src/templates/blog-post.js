@@ -27,7 +27,7 @@ export default ({ data }) => {
                                     <div className="post-media">
                                         <figure>
                                             <a href={poster}>
-                                                <img src={poster} alt="Poster" />
+                                                <img src={post.frontmatter.image} alt="Poster" />
                                             </a>
                                         </figure>
                                     </div>
@@ -53,6 +53,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        image
       }
     }
   }
