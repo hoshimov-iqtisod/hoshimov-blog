@@ -9,7 +9,7 @@ const ArticleBlock = () => (
                 <h1 className="entry-title">Почему дизайнерам нужно говорить на языке бизнеса</h1>
                 <div className="entry-meta-details">
                     <ul className="post-meta">
-                        <li className="meta-author">Николай Геллар</li>
+                        {/* <li className="meta-author"></li> */}
                         <li className="meta-date">17 января, 2020</li>
                     </ul>
                 </div>

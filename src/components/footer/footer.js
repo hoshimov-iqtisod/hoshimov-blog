@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import './footer.css';
 import telegram from '../../images/telegram-brands.svg';
 import fb from '../../images/facebook-brands.svg';
@@ -17,7 +16,6 @@ const Footer = ({ siteTitle }) => (
                             <i className="pk-social-links-icon pk-icon pk-icon-telegram">
                                 <img src={telegram} alt="Telegram"/>
                             </i>
-                            <span className="pk-social-links-count">9K</span>
                         </a>
                     </div>
                     <div className="pk-social-links-item">
@@ -36,20 +34,6 @@ const Footer = ({ siteTitle }) => (
                     </div>
                 </div>
                 </div>
-                <nav className="navbar-footer">
-                    <ul className="navbar-nav">
-                        <li className="menu-item">
-                            <Link to="/about">Контакты</Link>
-                        </li>
-                        <li className="menu-item">
-                            <Link to="/about">Политика конфиденциальности</Link>
-                        </li>
-                        <li className="menu-item">
-                            <Link to="/about">Правила публикации статей</Link>
-                        </li>
-                    </ul>  
-                </nav>
-                <div className="footer-copyright"> © 2014-2020 При использовании материалов сайта обязательным условием является наличие гиперссылки в пределах первого абзаца на страницу расположения исходной статьи.</div>
             </div>
         </div>
     </footer>
