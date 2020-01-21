@@ -1,9 +1,6 @@
 backend:
-  name: bitbucket
-  repo: oripovd1/blog-site.git
-  branch: default
-  auth_type: implicit
-  app_id: 2ARUP4rturuabLW2Pt
+  name: github
+  repo: Oripovd1/hoshimov-blog.git
 
 media_folder: static/assets
 public_folder: assets
