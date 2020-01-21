@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Headroom from 'react-headroom'
 import './header.css'
-import logo from '../images/ur-logo-2.png'
+import logo from '../images/hi_logo.svg'
 
 const Header = () => (
   <Headroom disableInlineStyles>
