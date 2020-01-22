@@ -2,8 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import poster from '../images/poster.jpg'
+import NotFoundPage from '../pages/404'
 
 export default ({ data, location }) => {
+    if(location.state) {
     const post = data.markdownRemark
     const lang = location.state.lang
     return (
@@ -45,6 +47,9 @@ export default ({ data, location }) => {
             </div>
         </Layout>
     )
+} else {
+    return <NotFoundPage />
+}
 }
 
 export const query = graphql`
