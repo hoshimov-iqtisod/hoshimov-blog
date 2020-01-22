@@ -3,14 +3,15 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import poster from '../images/poster.jpg'
 
-export default ({ data }) => {
+export default ({ data, location }) => {
     const post = data.markdownRemark
+    const lang = location.state.lang
     return (
-        <Layout>
+        <Layout lang={lang}>
             <div className="site-content">
                 <section className="entry-header entry-header-standard">
                     <div className="cs-container">
-                        <h1 className="entry-title">{post.frontmatter.title}</h1>
+                        <h1 className="entry-title">{lang === 'uz' ? post.frontmatter.title : (lang === 'ru' ? post.frontmatter.title_Ru : post.frontmatter.title_En)}</h1>
                         <div className="entry-meta-details">
                             <ul className="post-meta">
                                 {/* <li className="meta-author"></li> */}
@@ -33,7 +34,7 @@ export default ({ data }) => {
                                     </div>
                                     <div className="entry-container">
                                         <div className="entry-content-wrap">
-                                            <div className="entry-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+                                            <div className="entry-content" dangerouslySetInnerHTML={{ __html: `${lang === 'uz' ? post.html : (lang === 'ru' ? post.frontmatter.body_Ru : post.frontmatter.body_En)}` }} />
                                         </div>
                                     </div>
                                 </article>
@@ -52,8 +53,12 @@ export const query = graphql`
       html
       frontmatter {
         title
+        title_Ru
+        title_En
         date(formatString: "MMMM DD, YYYY")
         image
+        body_Ru
+        body_En
       }
     }
   }

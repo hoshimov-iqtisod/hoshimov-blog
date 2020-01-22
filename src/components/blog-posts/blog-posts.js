@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import './blog-posts.css';
 
-const BlogPosts = ({ data }) => {
+const BlogPosts = ({ data, lang }) => {
     return (
         <div className="site-content">
             <div className="cs-container">
@@ -10,7 +10,7 @@ const BlogPosts = ({ data }) => {
                     <div className="content-area">
                         <main className="site-main">
                             <header className="page-header">
-                                <h5 className="title-block">So'nggi xabarlar</h5>
+                                <h5 className="title-block">{lang === 'uz' ? "So'nggi xabarlar" : (lang === 'ru' ? 'Свежие записи' : 'New entries')}</h5>
                             </header>
                             <div className="post-archive">
                                 <div className="archive-wrap">
@@ -18,7 +18,7 @@ const BlogPosts = ({ data }) => {
                                         {data.map(({ node }) => (
                                             <article className="layout-list-alternative" key={node.id}>
                                                 <div className="post-outer">
-                                                    <Link to={node.fields.slug} className="post-link"></Link>
+                                                    <Link to={node.fields.slug} state={{ lang }} className="post-link"></Link>
                                                     <div className="post-inner entry-thumbnail">
                                                         <div className="cs-overlay cs-bg-dark cs-overlay-ratio cs-ratio-landscape">
                                                             <div className="cs-overlay-background">
@@ -29,9 +29,9 @@ const BlogPosts = ({ data }) => {
                                                     <div className="post-inner entry-inner">
                                                         <div className="entry-data">
                                                             <header className="entry-header">
-                                                                <h2 className="entry-title">{node.frontmatter.title}</h2>
+                                                                <h2 className="entry-title">{lang === 'uz' ? node.frontmatter.title : (lang === 'ru' ? node.frontmatter.title_Ru : node.frontmatter.title_En)}</h2>
                                                             </header>
-                                        <div className="entry-excerpt" dangerouslySetInnerHTML={{ __html: `${node.html.substring(0, 100)}...` }} />
+                                                            <div className="entry-excerpt" dangerouslySetInnerHTML={{ __html: `${lang === 'uz' ? node.html.substring(0, 100) : (lang === 'ru' ? node.frontmatter.body_Ru.substring(0, 100) : node.frontmatter.body_En.substring(0, 100))}...` }} />
                                                             <ul className="post-meta">
                                                                 {/* <li className="meta-date meta-author"></li> */}
                                                                 <li className="meta-date">{node.frontmatter.date}</li>

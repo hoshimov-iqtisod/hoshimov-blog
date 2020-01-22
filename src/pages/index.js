@@ -4,10 +4,10 @@ import SEO from "../components/seo"
 import BlogPosts from '../components/blog-posts'
 import { graphql } from 'gatsby'
 
-export default ({ data }) => (
-  <Layout>
+export default ({ data, location }) => (
+  <Layout lang={location.state.lang}>
     <SEO title="Home" />
-    <BlogPosts data={data.allMarkdownRemark.edges} />
+    <BlogPosts data={data.allMarkdownRemark.edges} lang={location.state.lang} />
   </Layout>
 )
 
@@ -19,8 +19,12 @@ export const query = graphql`
           id
           frontmatter {
             title
+            title_Ru
+            title_En
             date(formatString: "DD MMMM, YYYY")
             image
+            body_Ru
+            body_En
           }
           fields {
             slug
