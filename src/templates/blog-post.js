@@ -27,7 +27,7 @@ export default ({ data }) => {
                                     <div className="post-media">
                                         <figure>
                                             <a href={poster}>
-                                                <img src={post.frontmatter.image} alt="Poster" />
+                                                <img src={`../${post.frontmatter.image}`} alt="Poster" />
                                             </a>
                                         </figure>
                                     </div>

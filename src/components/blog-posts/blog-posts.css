@@ -78,6 +78,7 @@
     top: 0;
     bottom: 0;
     right: 0;
+    margin-bottom: 0;
 }
 .cs-overlay-background img {
     width: 100%;
@@ -88,7 +89,6 @@
 }
 .entry-thumbnail img {
     width: 100%;
-    height: auto;
     -webkit-transition: opacity .25s;
     transition: opacity .25s;
 }
