@@ -30,7 +30,7 @@ collections:
       - { name: image, label: Image, widget: image }
       - { name: body, label: Body_RU, widget: markdown }
 
-- label: Blog in Uzbek
+  - label: Blog in Uzbek
     name: uzbek_posts
     folder: blog
     create: true
