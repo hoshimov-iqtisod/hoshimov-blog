@@ -6,16 +6,26 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
+  - label: Blog in English
+    name: english_posts
     folder: blog
     create: true
+    filter: { field: "language", value: "en" }
     fields:
-      - { name: title, label: Title }
-      - { name: title_Ru, label: Title_Ru }
-      - { name: title_En, label: Title_En }
+      - { name: language, label: "Language", widget: "select", options: ["en", "ru"] }
+      - { name: title, label: Title, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image }
       - { name: body, label: Body, widget: markdown }
-      - { name: body_Ru, label: Body_Ru, widget: markdown }
-      - { name: body_En, label: Body_En, widget: markdown }
+
+  - label: Blog in Russian
+    name: russian_posts
+    folder: blog
+    create: true
+    filter: { field: "language", value: "ru" }
+    fields:
+      - { name: language, label: "Language", widget: "select", options: ["en", "ru"] }
+      - { name: title, label: Title_RU, widget: string }
+      - { name: date, label: Date, widget: datetime }
+      - { name: image, label: Image, widget: image }
+      - { name: body, label: Body_RU, widget: markdown }
