@@ -17,5 +17,5 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image }
       - { name: body, label: Body, widget: markdown }
-      - { name: body_Ru, label: Body_Ru, widget: markdown }
-      - { name: body_En, label: Body_En, widget: markdown }
+      - { name: body, label: Body_Ru, widget: markdown }
+      - { name: body, label: Body_En, widget: markdown }
