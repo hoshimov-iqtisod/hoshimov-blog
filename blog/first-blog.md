@@ -1,18 +1,11 @@
 ---
 language: en
-title: First blog
+title: I also went to the polls today and voted for the candidates
 date: 2020-01-24T14:01:29.079Z
-image: assets/photo_2020-01-22_03-02-02.jpg
+image: assets/photo_2020-01-22_03-02-08.jpg
 ---
-When Benjamin Franklin was leaving the constitution, a man asked:
+In my district, I voted for a 96-year-old graduate of the Diplomatic University. In the City Council, I voted for the Executive Director of the Development Strategy Center. I hope the candidates who vote will win.
 
-* Mr. What is going to happen to our country, the monarchy, or the republic?
-* Republic, if you can keep it.
+In addition, I am in favor of legalizing who is voting openly. I support legalization of exit polls. And I stand for the silence ahead of the parliamentary elections, just like the presidential election. If it was legal to speak proudly of who you voted for, I think everyone would win. The current legislation is an artifact of the past, since previously only media could have been propagandized, but now everyone can write to thousands of people in one letter. So it's impossible to control. This creates a legal nihilism. In addition, if it is legal for a voter to vote for, for example, his 100 friends, I think why this practice should be banned.
 
-Franklin says that it is up to the citizens to protect the republic, that is, to organize democracy and freedom, and most importantly, to save. I think this is a very profound idea.
-
-Last time I heard this on March 3, it was said by Adam Schiff during the impeachment in the Senate, former US Congress Speaker Pelosi, and recently named Nil Gorsuch himself, a recently elected US Supreme Court judge. Indeed, freedom is not the status quo. It should also be remembered here by Acemoglu and Robinson's new book (Narrow Corridor).
-
-All in all, Franklin was a very smart person, one of his best words:
-
-“Only good people can be free. There is an increasing need for farmers in corrupt and cruel nations. ”
+My dream is for our country to be free and democratic.
