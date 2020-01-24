@@ -4,20 +4,12 @@ import SEO from "../components/seo"
 import BlogPosts from '../components/blog-posts'
 import { graphql } from 'gatsby'
 
-export default ({ data, location }) => {
-  if(location.state) {
-    <Layout lang={location.state.lang}>
+export default ({ data, location }) => (
+  <Layout lang={location.state ? location.state.lang : 'uz'}>
     <SEO title="Home" />
-    <BlogPosts data={data.allMarkdownRemark.edges} lang={location.state.lang} />
+    <BlogPosts data={data.allMarkdownRemark.edges} lang={location.state ? location.state.lang : 'uz'} />
   </Layout>
-  } else {
-    return <Layout lang='uz'>
-    <SEO title="Home" />
-    <BlogPosts data={data.allMarkdownRemark.edges} lang='uz' />
-  </Layout>
-    
-  }
-}
+)
 
 export const query = graphql`
   query {
