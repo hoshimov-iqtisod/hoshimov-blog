@@ -1,15 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import SEO from '../components/seo'
 import poster from '../images/poster.jpg'
-import NotFoundPage from '../pages/404'
 
-export default ({ data, location }) => {
-    if(location.state) {
+export default ({ data }) => {
     const post = data.markdownRemark
-    const lang = location.state.lang
     return (
-        <Layout lang={lang}>
+        <Layout>
+            <SEO title={post.frontmatter.title} />
             <div className="site-content">
                 <section className="entry-header entry-header-standard">
                     <div className="cs-container">
@@ -47,9 +46,6 @@ export default ({ data, location }) => {
             </div>
         </Layout>
     )
-} else {
-    return <NotFoundPage />
-}
 }
 
 export const query = graphql`
