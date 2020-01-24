@@ -62,8 +62,6 @@ export const query = graphql`
         title_En
         date(formatString: "MMMM DD, YYYY")
         image
-        body_Ru
-        body_En
       }
     }
   }
