@@ -186,6 +186,16 @@
 .post-outer:hover .entry-title, .post-outer:focus .entry-title {
     color: #6c757d;
 }
+.entry-excerpt p a {
+    text-decoration: none;
+    border-bottom: 1px solid #c1c1c1;
+    color: #212121;
+    padding-bottom: 1px;
+}
+.entry-excerpt p a:hover {
+    color: #00a562;
+    border: none;
+}
 
 
 @media (max-width: 480px) {

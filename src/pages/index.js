@@ -9,7 +9,7 @@ export default ({ data, location }) => {
   return (
     <Layout lang={lang}>
       <SEO title="Home" />
-      <BlogPosts data={lang === 'ru' ? data.russianPost.edges : data.englishPost.edges} lang={lang} />
+      <BlogPosts data={lang === 'ru' ? data.russianPost.edges : (lang === 'en' ? data.englishPost.edges : data.uzbekPost.edges)} lang={lang} />
     </Layout>
   )
 }
@@ -33,6 +33,22 @@ export const query = graphql`
       }
     }
     russianPost: allMarkdownRemark(filter: {frontmatter: {language: {eq: "ru"}}}, sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+            image
+          }
+          fields {
+            slug
+          }
+          html
+        }
+      }
+    }
+    uzbekPost: allMarkdownRemark(filter: {frontmatter: {language: {eq: "uz"}}}, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id

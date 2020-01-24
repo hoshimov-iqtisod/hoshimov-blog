@@ -12,7 +12,7 @@ collections:
     create: true
     filter: { field: "language", value: "en" }
     fields:
-      - { name: language, label: "Language", widget: "select", options: ["en", "ru"] }
+      - { name: language, label: "Language", widget: "select", options: ["en", "ru", "uz"] }
       - { name: title, label: Title, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image }
@@ -24,7 +24,7 @@ collections:
     create: true
     filter: { field: "language", value: "ru" }
     fields:
-      - { name: language, label: "Language", widget: "select", options: ["en", "ru"] }
+      - { name: language, label: "Language", widget: "select", options: ["en", "ru", "uz"] }
       - { name: title, label: Title_RU, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image }
