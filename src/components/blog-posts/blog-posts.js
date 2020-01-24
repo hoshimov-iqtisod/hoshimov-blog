@@ -29,9 +29,9 @@ const BlogPosts = ({ data, lang }) => {
                                                     <div className="post-inner entry-inner">
                                                         <div className="entry-data">
                                                             <header className="entry-header">
-                                                                <h2 className="entry-title">{lang === 'uz' ? node.frontmatter.title : (lang === 'ru' ? node.frontmatter.title_Ru : node.frontmatter.title_En)}</h2>
+                                                                <h2 className="entry-title">{node.frontmatter.title}</h2>
                                                             </header>
-                                                            <div className="entry-excerpt" dangerouslySetInnerHTML={{ __html: `${lang === 'uz' ? node.html.substring(0, 100) : (lang === 'ru' ? node.frontmatter.body_Ru.substring(0, 100) : node.frontmatter.body_En.substring(0, 100))}...` }} />
+                                                            <div className="entry-excerpt" dangerouslySetInnerHTML={{ __html: node.html.substring(0, 100) }} />
                                                             <ul className="post-meta">
                                                                 {/* <li className="meta-date meta-author"></li> */}
                                                                 <li className="meta-date">{node.frontmatter.date}</li>
