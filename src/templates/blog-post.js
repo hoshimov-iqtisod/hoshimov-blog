@@ -4,10 +4,11 @@ import Layout from "../components/layout"
 import SEO from '../components/seo'
 import poster from '../images/poster.jpg'
 
-export default ({ data }) => {
+export default ({ data, location }) => {
     const post = data.markdownRemark
+    const lang = location.state ? location.state.lang : 'uz'
     return (
-        <Layout>
+        <Layout lang={lang}>
             <SEO title={post.frontmatter.title} />
             <div className="site-content">
                 <section className="entry-header entry-header-standard">

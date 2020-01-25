@@ -18,7 +18,7 @@ const BlogPosts = ({ data, lang }) => {
                                         {data.map(({ node }) => (
                                             <article className="layout-list-alternative" key={node.id}>
                                                 <div className="post-outer">
-                                                    <Link to={node.fields.slug} className="post-link"></Link>
+                                                    <Link to={node.fields.slug} state={{ lang }} className="post-link"></Link>
                                                     <div className="post-inner entry-thumbnail">
                                                         <div className="cs-overlay cs-bg-dark cs-overlay-ratio cs-ratio-landscape">
                                                             <div className="cs-overlay-background">

@@ -15,17 +15,17 @@ const Header = ({ lang }) => (
         <div className="navbar-wrap">
           <div className="navbar-container">
             <div className="navbar-content">
-              <Link to="/" className="navbar-brand">
+              <Link to="/" state={{ lang }} className="navbar-brand">
                 <img src={logo} alt="Site logo" />
               </Link>
               <ul className="navbar-nav ">
                 <li className="menu-item">
-<Link to="/">{lang === 'uz' ? 'Maqolalar' : (lang === 'ru' ? 'Статьи' : 'Articles')}</Link>
+                  <Link to="/" state={{ lang }}>{lang === 'uz' ? 'Maqolalar' : (lang === 'ru' ? 'Статьи' : 'Articles')}</Link>
                 </li>
               </ul>
               <div className="nav-item dropdown">
                 <span className="at-left">
-                  <img src={uzFlag} alt="select language" />
+                  <img src={lang === 'uz' ? uzFlag : (lang === 'ru' ? ruFlag : usaFlag)} alt="select language" />
                 </span>
                 <div className="dropdown-content">
                   <Link to="/" state={{ lang: 'uz' }}>
