@@ -186,6 +186,9 @@
 .post-outer:hover .entry-title, .post-outer:focus .entry-title {
     color: #6c757d;
 }
+.entry-excerpt p {
+    margin-bottom: 0;
+}
 .entry-excerpt p a {
     text-decoration: none;
     border-bottom: 1px solid #c1c1c1;
@@ -276,9 +279,9 @@
     }
     .content-area {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100% - 480px);
-        flex: 0 0 calc(100% - 480px);
-        max-width: calc(100% - 480px);
+        -ms-flex: 0 0 calc(100% - 380px);
+        flex: 0 0 calc(100% - 380px);
+        max-width: calc(100% - 380px);
     }
     .layout-list-alternative .post-inner {
         -webkit-box-flex: 0;
@@ -339,6 +342,7 @@
         flex-wrap: wrap;
         margin-right: -20px;
         margin-left: -20px;
+        justify-content: center;
     }
 }
 @media (min-width: 1200px) {
