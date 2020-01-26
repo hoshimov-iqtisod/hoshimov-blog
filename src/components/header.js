@@ -7,6 +7,7 @@ import logo from '../images/hi_logo.svg'
 import usaFlag from '../images/usa-flag.svg';
 import ruFlag from '../images/ru-flag.svg';
 import uzFlag from '../images/uz-flag.svg';
+import { FaTelegram, FaYoutube, FaFacebook } from 'react-icons/fa';
 
 const Header = ({ lang }) => (
   <Headroom disableInlineStyles>
@@ -23,6 +24,29 @@ const Header = ({ lang }) => (
                   <Link to="/" state={{ lang }}>{lang === 'uz' ? 'Maqolalar' : (lang === 'ru' ? 'Статьи' : 'Articles')}</Link>
                 </li>
               </ul>
+              <div className="pk-social-links-items social-menu">
+                    <div className="pk-social-links-item">
+                        <a href="https://t.me/iqtisodchi_kundaligi" className="pk-social-links-link" target="_blank" rel="noopener noreferrer">
+                            <i className="pk-social-links-icon pk-icon pk-icon-telegram">
+                              <FaTelegram size="22px" />
+                            </i>
+                        </a>
+                    </div>
+                    <div className="pk-social-links-item">
+                        <a href="https://www.youtube.com/channel/UCRsqjw8SVM9oMZPP0anA_kA" className="pk-social-links-link" target="_blank" rel="noopener noreferrer">
+                            <i className="pk-social-links-icon pk-icon pk-icon-youtube">
+                              <FaYoutube size="22px" />
+                            </i>
+                        </a>
+                    </div>
+                    <div className="pk-social-links-item">
+                        <a href="https://t.me/iqtisodchi_kundaligi" className="pk-social-links-link" target="_blank" rel="noopener noreferrer">
+                            <i className="pk-social-links-icon pk-icon pk-icon-fb">
+                              <FaFacebook size="22px" />
+                            </i>
+                        </a>
+                    </div>
+                </div>
               <div className="nav-item dropdown">
                 <span className="at-left">
                   <img src={lang === 'uz' ? uzFlag : (lang === 'ru' ? ruFlag : usaFlag)} alt="select language" />

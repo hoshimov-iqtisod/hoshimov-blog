@@ -31,7 +31,7 @@ const BlogPosts = ({ data, lang }) => {
                                                             <header className="entry-header">
                                                                 <h2 className="entry-title">{node.frontmatter.title}</h2>
                                                             </header>
-                                                            <div className="entry-excerpt" dangerouslySetInnerHTML={{ __html: `${node.html.substring(0, 100)}...` }} />
+                                                            <div className="entry-excerpt" dangerouslySetInnerHTML={{ __html: `${node.html.substring(0, 150)}...` }} />
                                                             <ul className="post-meta">
                                                                 {/* <li className="meta-date meta-author"></li> */}
                                                                 <li className="meta-date">{node.frontmatter.date}</li>

@@ -140,6 +140,24 @@
     -ms-flex-order: 3;
     order: 3;
 }
+.social-menu {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+    padding-right: 30px;
+}
+.pk-social-links-item {
+    margin-left: 10px;
+}
+.pk-icon-telegram:hover svg {
+    fill: #0088cc;
+}
+.pk-icon-youtube:hover svg {
+    fill: #c4302b;
+}
+.pk-icon-fb:hover svg {
+    fill: #3b5998;
+}
 .dropdown {
     position: relative;
     display: flex;
