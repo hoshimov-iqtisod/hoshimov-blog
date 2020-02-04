@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: oripovd1/hoshimov-blog
+  repo: hoshimov-iqtisod/hoshimov-blog
 
 media_folder: static/assets
 public_folder: assets
