@@ -1,0 +1,133 @@
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+.about-content img {
+    position: absolute;
+    max-width: 215px;
+    max-height: 215px;
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
+    z-index: -1;
+}
+.about-content article {
+    width: 100%;
+    margin: 80px auto 0 0;
+}
+h2.content-header {
+    font-size: 2.5rem;
+}
+.text-block.entry-content {
+    margin-top: 60px;
+}
+
+.episodes-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.episode {
+    position: relative;
+    min-width: calc(100vw-40px);
+    min-height: 176px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    margin-bottom: 1rem;
+}
+.episode-image img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+.episode-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .4s ease-in-out;
+}
+.episode:hover .episode-image, .episode:hover .blog-image {
+    width: 105%;
+    height: 105%;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.episode-title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    margin-bottom: 0;
+    padding: 10px;
+    color: #fff;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 600px) {
+    .episodes-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .episode {
+        min-width: 330px;
+        min-height: 173px;
+    }
+    h2.content-header {
+        font-size: 2.7rem;
+        text-transform: capitalize;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        position: relative;
+    }    
+    .about-content article {
+        width: 100%;
+        margin: 100px auto 0 0;
+    }
+    .about-content img {
+        max-width: 295px;
+        max-height: 295px;
+    }
+    .text-block.entry-content {
+        margin-top: 80px;
+        font-size: 1.25rem;
+    }
+}
+@media (min-width: 1020px) {
+    .episodes-content {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .episode {
+        min-width: 350px;
+        min-height: 184px;
+        margin: 0 10px;
+    }
+    .about-content img {
+        max-width: 375px;
+        max-height: 375px;
+    }
+    .about-content article {
+        width: 65.45%;
+        margin: 80px auto 0 0;
+    }
+    .text-block.entry-content {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+}

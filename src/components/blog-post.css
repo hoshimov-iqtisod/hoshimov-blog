@@ -1,3 +1,76 @@
+.site-content.blog-post {
+    margin-top: 60px;
+}
+.content-box {
+    padding: 1rem 2rem;
+    border-width: 3px 0;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: #2e2e2e;
+}
+.horizontal-list {
+    margin: 0;
+    color: #fff;
+}
+.horizontal-list__title {
+    color: #823282;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.horizontal-list li {
+    display: inline-block;
+    list-style: none;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.horizontal-list.horizontal-list--bulleted li + li {
+    position: relative;
+}
+.horizontal-list.horizontal-list--bulleted li + li::before {
+    content: "\2022";
+    position: absolute;
+    width: 0;
+    text-align: center;
+    left: -13px;
+}
+.horizontal-list li a {
+    color: #fff;
+    transition: all .4s;
+}
+.player {
+    width: 100%;
+    padding: 10px 1rem;
+}
+.player iframe {
+    display: block;
+    margin: 0 auto 10px;
+}
+.player audio {
+    width: 90%;
+}
+.player audio:focus {
+    outline: none;
+}
+
+@media (min-width: 1000px) {
+    .content-box {
+        border-width: 3px;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 4.5rem;
+    }
+    .horizontal-list li {
+        font-size: 20px;
+    }
+    .horizontal-list li + li {
+        margin-left: 1.5rem;
+    }
+    .horizontal-list.horizontal-list--bulleted li + li::before {
+        left: -18px;
+    }
+}
+
+
 .entry-header-title, .entry-header-standard {
     margin-bottom: 1.5rem;
 }

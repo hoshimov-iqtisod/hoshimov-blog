@@ -1,20 +1,22 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BlogPosts from '../components/blog-posts'
 import { graphql } from 'gatsby'
-import HomeSplash from '../components/home-splash'
-import HomeContent from "../components/home-content"
+import EpisodeSplash from "../components/episode-splash"
 
-export default ({ data, location }) => {
+const Epsiodes = ({ data, location }) => {
   const lang = location.state ? location.state.lang : 'uz';
   return (
     <Layout lang={lang}>
-      <SEO title="Home" />
-      <HomeSplash />
-      <HomeContent data={data.englishPost.edges} />
+      <SEO title="Episodes" />
+      <EpisodeSplash lang={lang} data={data.englishPost.edges[0]} />
+      <BlogPosts data={lang === 'ru' ? data.russianPost.edges : (lang === 'en' ? data.englishPost.edges : data.uzbekPost.edges)} lang={lang} />
     </Layout>
   )
 }
+
+export default Epsiodes;
 
 export const query = graphql`
   query {

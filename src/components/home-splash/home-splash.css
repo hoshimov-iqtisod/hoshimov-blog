@@ -1,0 +1,25 @@
+.home-splash {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vh;
+}
+.home-splash-content {
+    min-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .home-splash {
+        width: 100%;
+        height: 100vh;
+        padding-top: 0;
+    }
+    .home-splash-content {
+        min-width: 680px;
+    }   
+}

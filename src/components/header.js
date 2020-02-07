@@ -21,7 +21,7 @@ const Header = ({ lang }) => (
               </Link>
               <ul className="navbar-nav ">
                 <li className="menu-item">
-                  <Link to="/" state={{ lang }}>{lang === 'uz' ? 'Maqolalar' : (lang === 'ru' ? 'Статьи' : 'Articles')}</Link>
+                  <Link to="/episodes" state={{ lang }}>{lang === 'uz' ? "Ko'rsatuvlar" : (lang === 'ru' ? 'Передачи' : 'Episodes')}</Link>
                 </li>
               </ul>
               <div className="pk-social-links-items social-menu">

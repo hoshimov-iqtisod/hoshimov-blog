@@ -1,0 +1,31 @@
+div.content-area {
+    flex-basis: 100%;
+    min-width: 100%;
+}
+.layout-list-alternative .post-inner {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.layout-list-alternative .post-inner+.post-inner {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.layout-list-alternative .entry-title {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+.page-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+.post-archive {
+    margin-top: 2rem;
+}
+.layout-list-alternative .post-inner+.post-inner .entry-data {
+    display: flex;
+    flex-direction: column;
+}
+.layout-list-alternative .post-inner+.post-inner .post-meta {
+    flex: 0;
+    margin-top: 0;
+}
