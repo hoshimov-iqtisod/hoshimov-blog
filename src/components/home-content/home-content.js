@@ -3,7 +3,7 @@ import './home-content.css';
 import avatar from '../../images/avatar.jpg';
 import { Link } from 'gatsby';
 
-const HomeContent = ({ data }) => (
+const HomeContent = ({ data, lang }) => (
     <section className="section-about">
         <div className="site-content">
             <div className="cs-container">
@@ -24,7 +24,7 @@ const HomeContent = ({ data }) => (
                     <h2 className="content-header">Latest episodes</h2>
                     <div className="episodes-content">
                         {data.map((obj, i) => (
-                            <Link to="/" key={i} className="episode">
+                            <Link to={obj.node.fields.slug} key={i} className="episode">
                                 <div className="episode-image"><img src={obj.node.frontmatter.image} alt="Episode"/></div>
                                 <h3 className="episode-title">{obj.node.frontmatter.title}</h3>
                                 <div className="overlay"></div>                                

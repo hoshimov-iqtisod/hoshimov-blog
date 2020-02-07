@@ -28,6 +28,7 @@ h2.content-header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .episode {
     position: relative;
@@ -116,7 +117,7 @@ h2.content-header {
     .episode {
         min-width: 350px;
         min-height: 184px;
-        margin: 0 10px;
+        margin: 0 10px 1rem;
     }
     .about-content img {
         max-width: 375px;

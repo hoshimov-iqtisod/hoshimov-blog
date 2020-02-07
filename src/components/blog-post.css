@@ -100,7 +100,6 @@ figure {
     font-size: 1.125rem;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
-    order: 1;
 }
 .entry-content {
     font-family: "Roboto", sans-serif;

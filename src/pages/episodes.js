@@ -6,11 +6,11 @@ import { graphql } from 'gatsby'
 import EpisodeSplash from "../components/episode-splash"
 
 const Epsiodes = ({ data, location }) => {
-  const lang = location.state ? location.state.lang : 'uz';
+  const lang = location.state ? location.state.lang : 'en';
   return (
     <Layout lang={lang}>
       <SEO title="Episodes" />
-      <EpisodeSplash lang={lang} data={data.englishPost.edges[0]} />
+      <EpisodeSplash lang={lang} data={lang === 'ru' ? data.russianPost.edges[0] : (lang === 'en' ? data.englishPost.edges[0] : data.uzbekPost.edges[0])} />
       <BlogPosts data={lang === 'ru' ? data.russianPost.edges : (lang === 'en' ? data.englishPost.edges : data.uzbekPost.edges)} lang={lang} />
     </Layout>
   )

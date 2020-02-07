@@ -6,12 +6,12 @@ import HomeSplash from '../components/home-splash'
 import HomeContent from "../components/home-content"
 
 export default ({ data, location }) => {
-  const lang = location.state ? location.state.lang : 'uz';
+  const lang = location.state ? location.state.lang : 'en';
   return (
     <Layout lang={lang}>
       <SEO title="Home" />
       <HomeSplash />
-      <HomeContent data={data.englishPost.edges} />
+      <HomeContent data={lang === 'ru' ? data.russianPost.edges : (lang === 'en' ? data.englishPost.edges : data.uzbekPost.edges)} lang={lang} />
     </Layout>
   )
 }

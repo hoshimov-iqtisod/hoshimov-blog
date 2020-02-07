@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from '../components/seo'
 import '../components/blog-post.css'
-import audio from '../images/umidaxon.mp3';
 
 export default ({ data, location }) => {
     const post = data.markdownRemark
@@ -49,7 +48,7 @@ export default ({ data, location }) => {
                                         </div>
                                     </section>
                                     <div className="player">
-                                        <iframe title="Jennifer Murtazashvili" width="640" height="360" src="https://www.youtube.com/embed/RDjtTagot7I" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                                        <iframe title={post.frontmatter.title} width="640" height="360" src={post.frontmatter.video_url} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                                     </div>
                                     <div className="entry-container">
                                         <div className="entry-content-wrap">
@@ -58,7 +57,7 @@ export default ({ data, location }) => {
                                     <div className="player">
                                         <strong>Listen to the full conversation</strong>
                                         <audio controls>
-                                            <source src={audio} type="audio/mpeg" />
+                                            <source src={`../${post.frontmatter.audio}`} type="audio/mpeg" />
                                             <track kind="captions" />
                                             Your browser does not support the audio element
                                         </audio>
@@ -83,6 +82,8 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         image
+        video_url
+        audio
       }
       fields {
           slug
