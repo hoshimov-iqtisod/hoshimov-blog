@@ -3,6 +3,7 @@ language: uz
 title: >-
   "Davlat moliyasi va iqtisodiy taraqqiyot" - Moliya Vazirining o'rinbosari
   Odilbek Isakov
+name: Odilbek Isakov
 date: 2020-02-07T19:52:11.104Z
 image: assets/odilbek.webp
 video_url: 'https://youtube.com/embed/B2mRafyDTww'
