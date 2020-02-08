@@ -1,8 +1,11 @@
 ---
 language: en
 title: I also went to the polls today and voted for the candidates
+name: election
 date: 2020-01-24T14:01:29.079Z
 image: assets/photo_2020-01-22_03-02-08.jpg
+video_url: 'https://youtu.be/RDjtTagot7I'
+audio: assets/umidaxon.mp3
 ---
 In my district, I voted for a 96-year-old graduate of the Diplomatic University. In the City Council, I voted for the Executive Director of the Development Strategy Center. I hope the candidates who vote will win.
 

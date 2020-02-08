@@ -1,8 +1,11 @@
 ---
 language: en
 title: Quoted from Alexander Auzan
+name: Alexander Auzan
 date: 2020-01-24T19:59:46.046Z
 image: assets/photo_2020-01-25_00-51-22.jpg
+video_url: 'https://youtu.be/RDjtTagot7I'
+audio: assets/umidaxon.mp3
 ---
 Quoted from Alexander Auzan, Dean of Economics Faculty at Moscow State University.
 

@@ -1,6 +1,7 @@
 ---
 language: uz
 title: '"Iqtisodiy taraqqiyot va qonunchilik" - Senator Sodiq Safoyev'
+name: Sodiq Safoyev
 date: 2020-02-05T07:16:20.582Z
 image: assets/sodiq.webp
 video_url: 'https://youtube.com/embed/mv5VschS9F0'
