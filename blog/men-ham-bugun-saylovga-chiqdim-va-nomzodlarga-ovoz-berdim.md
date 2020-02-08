@@ -1,8 +1,11 @@
 ---
 language: uz
 title: Men ham bugun saylovga chiqdim va nomzodlarga ovoz berdim
+name: election
 date: 2020-01-24T19:47:45.307Z
 image: assets/photo_2020-01-22_03-02-08.jpg
+video_url: 'https://youtu.be/RDjtTagot7I'
+audio: assets/umidaxon.mp3
 ---
 Tumanimizda, 96 yil tug’ilgan Diplomatiya universiteti bitiruvchisiga ovoz berdim. Shahar kengashida esa “Taraqqiyot Strategiyasi” markazi ijrochi direktoriga ovoz berdim. Men ovoz bergan nomzodlar yutib chiqadi degan umiddaman.
 
