@@ -1,8 +1,11 @@
 ---
 language: uz
 title: Aleksandr Auzan maʼruzasidan iqtibos
+name: Alexander Auzan
 date: 2020-01-24T19:51:49.682Z
 image: assets/photo_2020-01-25_00-51-22.jpg
+video_url: 'https://youtu.be/RDjtTagot7I'
+audio: assets/umidaxon.mp3
 ---
 Moskva Davlat Universiteti iqtisodiyot fakulteti dekani Aleksandr Auzan maʼruzasidan iqtibos.
 
