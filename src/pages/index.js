@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
-import HomeSplash from '../components/home-splash'
+//import HomeSplash from '../components/home-splash'
+import Carousel from '../components/carousel'
 import HomeContent from "../components/home-content"
 
 export default ({ data, location }) => {
@@ -10,7 +11,7 @@ export default ({ data, location }) => {
   return (
     <Layout lang={lang}>
       <SEO title="Home" />
-      <HomeSplash />
+      <Carousel />
       <HomeContent data={lang === 'ru' ? data.russianPost.edges : (lang === 'en' ? data.englishPost.edges : data.uzbekPost.edges)} lang={lang} />
     </Layout>
   )

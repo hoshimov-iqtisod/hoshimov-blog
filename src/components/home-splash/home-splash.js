@@ -9,14 +9,13 @@ import sodiq from '../../images/sodiq.webp';
 
 
 class HomeSplash extends React.Component {
+    // componentDidMount() {
+    //     import('nuka-carousel').then((carousel) => {
+    //         this.carousel = carousel;
+    //     }).catch((error) => console.log(error));
+    // }
     render() {
-        // const settings = {
-        //     dots: true,
-        //     infinite: true,
-        //     speed: 500,
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1
-        //   };
+        // const Carousel = this.carousel;
           return (
             <section className="home-splash">
                     <Carousel autoplay renderBottomCenterControls={null} renderCenterLeftControls={null} renderCenterRightControls={null} wrapAround autoplayReverse transitionMode='fade'>
