@@ -3,6 +3,7 @@ language: en
 title: >-
   "Lost Enlightenment" - Frederick Starr -- professor, author, scholar of
   Central Asia.
+name: Frederick Starr
 date: 2020-02-07T19:41:50.643Z
 image: assets/frederick.webp
 video_url: 'https://youtube.com/embed/RymZTJmUEAw'
