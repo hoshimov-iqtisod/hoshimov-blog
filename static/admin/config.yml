@@ -8,7 +8,7 @@ public_folder: assets
 collections:
   - label: Blog in English
     name: english_posts
-    folder: blog
+    folder: blog/en
     create: true
     filter: { field: "language", value: "en" }
     identifier_field: name
@@ -24,7 +24,7 @@ collections:
 
   - label: Blog in Russian
     name: russian_posts
-    folder: blog
+    folder: blog/ru
     create: true
     filter: { field: "language", value: "ru" }
     identifier_field: name 
@@ -40,7 +40,7 @@ collections:
 
   - label: Blog in Uzbek
     name: uzbek_posts
-    folder: blog
+    folder: blog/uz
     create: true
     filter: { field: "language", value: "uz" }
     identifier_field: name
