@@ -11,9 +11,11 @@ collections:
     folder: blog
     create: true
     filter: { field: "language", value: "en" }
+    identifier_field: name
     fields:
       - { name: language, label: "Language", widget: "select", options: ["en", "ru", "uz"] }
       - { name: title, label: Title, widget: string }
+      - { name: name, label: Name, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image }
       - { name: video_url, label: VideoUrl, widget: string }
@@ -25,9 +27,11 @@ collections:
     folder: blog
     create: true
     filter: { field: "language", value: "ru" }
+    identifier_field: name 
     fields:
       - { name: language, label: "Language", widget: "select", options: ["en", "ru", "uz"] }
       - { name: title, label: Title_RU, widget: string }
+      - { name: name, label: Name, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image }
       - { name: video_url, label: VideoUrl, widget: string }
@@ -39,9 +43,11 @@ collections:
     folder: blog
     create: true
     filter: { field: "language", value: "uz" }
+    identifier_field: name
     fields:
       - { name: language, label: "Language", widget: "select", options: ["en", "ru", "uz"] }
       - { name: title, label: Title_UZ, widget: string }
+      - { name: name, label: Name, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image }
       - { name: video_url, label: VideoUrl, widget: string }
