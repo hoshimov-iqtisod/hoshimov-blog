@@ -117,7 +117,7 @@ h2.content-header {
 }
 @media (min-width: 1020px) {
     .section-about {
-        padding-top: 100vh;
+        padding-top: 110vh;
     }
     .episodes-content {
         flex-direction: row;
