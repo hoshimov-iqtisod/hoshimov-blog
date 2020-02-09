@@ -8,10 +8,9 @@ public_folder: assets
 collections:
   - label: Blog in English
     name: english_posts
-    folder: blog_en
+    folder: blog
     create: true
     filter: { field: "language", value: "en" }
-    identifier_field: name
     fields:
       - { name: language, label: "Language", widget: "select", options: ["en", "ru", "uz"] }
       - { name: title, label: Title, widget: string }
@@ -24,10 +23,9 @@ collections:
 
   - label: Blog in Russian
     name: russian_posts
-    folder: blog_ru
+    folder: blog
     create: true
     filter: { field: "language", value: "ru" }
-    identifier_field: name 
     fields:
       - { name: language, label: "Language", widget: "select", options: ["en", "ru", "uz"] }
       - { name: title, label: Title_RU, widget: string }
@@ -40,10 +38,9 @@ collections:
 
   - label: Blog in Uzbek
     name: uzbek_posts
-    folder: blog_uz
+    folder: blog
     create: true
     filter: { field: "language", value: "uz" }
-    identifier_field: name
     fields:
       - { name: language, label: "Language", widget: "select", options: ["en", "ru", "uz"] }
       - { name: title, label: Title_UZ, widget: string }
