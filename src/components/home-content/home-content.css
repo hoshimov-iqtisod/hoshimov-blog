@@ -1,3 +1,6 @@
+.section-about {
+    padding-top: 50vh;
+}
 .about-content {
     display: flex;
     flex-direction: column;
@@ -78,6 +81,9 @@ h2.content-header {
 }
 
 @media (min-width: 600px) {
+    .section-about {
+        padding-top: 50vh;
+    }
     .episodes-content {
         flex-direction: row;
         justify-content: space-between;
@@ -110,6 +116,9 @@ h2.content-header {
     }
 }
 @media (min-width: 1020px) {
+    .section-about {
+        padding-top: 100vh;
+    }
     .episodes-content {
         flex-direction: row;
         justify-content: flex-start;

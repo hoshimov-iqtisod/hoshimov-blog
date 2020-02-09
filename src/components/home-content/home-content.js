@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 const HomeContent = ({ data, lang }) => (
     <section className="section-about">
-        <div className="site-content">
+        {/* <div className="site-content"> */}
             <div className="cs-container">
                 <div className="about-content">
                     <img src={avatar} alt="Hoshimov"/>
@@ -16,7 +16,7 @@ const HomeContent = ({ data, lang }) => (
                         </div>
                     </article>
                 </div>
-            </div>
+            {/* </div> */}
         </div>
         <div className="site-content">
             <div className="cs-container">
@@ -26,7 +26,7 @@ const HomeContent = ({ data, lang }) => (
                         {data.map((obj, i) => (
                             <Link to={obj.node.fields.slug} key={i} className="episode">
                                 <div className="episode-image"><img src={obj.node.frontmatter.image} alt="Episode"/></div>
-                                <h3 className="episode-title">{obj.node.frontmatter.title}</h3>
+                                <h3 className="episode-title">{obj.node.frontmatter.name}</h3>
                                 <div className="overlay"></div>                                
                             </Link>
                         ))}
